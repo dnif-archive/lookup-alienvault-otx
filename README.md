@@ -1,1 +1,1 @@
-# -lookup-alienvault-otx
+# lookup-alienvault-otx
