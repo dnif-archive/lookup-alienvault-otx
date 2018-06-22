@@ -17,7 +17,7 @@ The OTX platform consists of two chief components:
 
 The following lookup reports can been generated in the [DNIF console](https://dnif.it/docs/learn/DQL/index.html) using data from the AlienVault OTX integration:
 
- * [Domain report](#domain-report) - Complete report of all threat indicators for a given domain, including data from all the sub reports below.
+* [Domain report](#domain-report) - Complete report of all threat indicators for a given domain, including data from all the sub reports below.
   * [Domain Pulse report](#domain-pulse-report) - Threat indicators for a given domain gathered from the OTX community pulse stream.
   * [Domain Geo report](#domain-geo-report) - Registered and inferred geographic information for a given domain (city, country, postal etc).
   * [Domain Malware report](#domain-malware-report) - Malware samples analyzed by AlienVault Labs which have been observed connecting to the given domain.
