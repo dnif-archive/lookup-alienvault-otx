@@ -52,7 +52,7 @@ _fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_report $Domain
 ```
 
-[![Get Domain Report Walkthrough Video](readme-media/GIFs/get_domain_report.gif)](readme-media/videos/get_domain_report.mov)
+[![Get Domain Report Walkthrough Video](readme-media/GIFs/get_domain_report.gif)](https://youtu.be/9zKyJSq5UpA)
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -111,7 +111,9 @@ _fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_pulse_report $Domain
 ```
 
-[![Get Domain Pulse Report Walkthrough Video](readme-media/GIFs/get_domain_pulse_report.gif)](readme-media/videos/get_domain_pulse_report.mov)
+[![Get Domain Pulse Report Walkthrough Video](readme-media/GIFs/get_domain_pulse_report.gif)](https://youtu.be/TEQPPOrrt10)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -136,7 +138,9 @@ _fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_geo_report $Domain
 ```
 
-[![Get Domain Geo Report Walkthrough Video](readme-media/GIFs/get_domain_geo_report.gif)](readme-media/videos/get_domain_geo_report.mov)
+[![Get Domain Geo Report Walkthrough Video](readme-media/GIFs/get_domain_geo_report.gif)](https://youtu.be/t5Hd9yR6GDc)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -163,7 +167,9 @@ _fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_malware_report $Domain
 ```
 
-[![Get Domain Malware Report Walkthrough Video](readme-media/GIFs/get_domain_malware_report.gif)](readme-media/videos/get_domain_malware_report.mov)
+[![Get Domain Malware Report Walkthrough Video](readme-media/GIFs/get_domain_malware_report.gif)](https://youtu.be/wcd80u6tbeI)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -182,7 +188,9 @@ _fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_url_report $Domain
 ```
 
-[![Get Domain URL Report Walkthrough Video](readme-media/GIFs/get_domain_url_report.gif)](readme-media/videos/get_domain_url_report.mov)
+[![Get Domain URL Report Walkthrough Video](readme-media/GIFs/get_domain_url_report.gif)](https://youtu.be/h9AD4ZJ4Ml8)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -203,7 +211,9 @@ _fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_passivedns_report $Domain
 ```
 
-[![Get Domain Passive DNS Report Walkthrough Video](readme-media/GIFs/get_domain_passivedns_report.gif)](readme-media/videos/get_domain_passivedns_report.mov)
+[![Get Domain Passive DNS Report Walkthrough Video](readme-media/GIFs/get_domain_passivedns_report.gif)](https://youtu.be/-_S_aOA9T4U)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -224,7 +234,9 @@ _fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_whois_report $Domain
 ```
 
-[![Get Domain WHOIS Report Walkthrough Video](readme-media/GIFs/get_domain_whois_report.gif)](readme-media/videos/get_domain_whois_report.mov)
+[![Get Domain WHOIS Report Walkthrough Video](readme-media/GIFs/get_domain_whois_report.gif)](https://youtu.be/D6_FwbG2fso)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -257,7 +269,9 @@ _fetch $Filehash from testingintegrations limit 1
 >>_lookup alienvaultotx get_hash_report $Filehash
 ```
 
-[![Get Hash Report Walkthrough Video](readme-media/GIFs/get_hash_report.gif)](readme-media/videos/get_hash_report.mov)
+[![Get Hash Report Walkthrough Video](readme-media/GIFs/get_hash_report.gif)](https://youtu.be/RPfJp4Dot_M)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -299,7 +313,9 @@ _fetch $URL from testingintegrations limit 1
 >>_lookup alienvaultotx get_url_report $URL
 ```
 
-[![Get URL Report Walkthrough Video](readme-media/GIFs/get_url_report.gif)](readme-media/videos/get_url_report.mov)
+[![Get URL Report Walkthrough Video](readme-media/GIFs/get_url_report.gif)](https://youtu.be/4at7yzO230o)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -341,7 +357,9 @@ _fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_report $DstHostname
 ```
 
-[![Get Hostname Report Walkthrough Video](readme-media/GIFs/get_hostname_report.gif)](readme-media/videos/get_hostname_report.mov)
+[![Get Hostname Report Walkthrough Video](readme-media/GIFs/get_hostname_report.gif)](https://youtu.be/Rcp9hFVu23E)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -384,7 +402,9 @@ _fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_pulse_report $DstHostname
 ```
 
-[![Get Hostname Pulse Report Walkthrough Video](readme-media/GIFs/get_hostname_pulse_report.gif)](readme-media/videos/get_hostname_pulse_report.mov)
+[![Get Hostname Pulse Report Walkthrough Video](readme-media/GIFs/get_hostname_pulse_report.gif)](https://youtu.be/RsFuaKEcD4g)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -409,7 +429,9 @@ _fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_geo_report $DstHostname
 ```
 
-[![Get Hostname Geo Report Walkthrough Video](readme-media/GIFs/get_hostname_geo_report.gif)](readme-media/videos/get_hostname_geo_report.mov)
+[![Get Hostname Geo Report Walkthrough Video](readme-media/GIFs/get_hostname_geo_report.gif)](https://youtu.be/-WqHYS6ylio)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -436,7 +458,9 @@ _fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_malware_report $DstHostname
 ```
 
-[![Get Hostname Malware Report Walkthrough Video](readme-media/GIFs/get_hostname_malware_report.gif)](readme-media/videos/get_hostname_malware_report.mov)
+[![Get Hostname Malware Report Walkthrough Video](readme-media/GIFs/get_hostname_malware_report.gif)](https://youtu.be/BDnrIOhZ8m4)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -455,7 +479,9 @@ _fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_url_report $DstHostname
 ```
 
-[![Get Hostname URL Report Walkthrough Video](readme-media/GIFs/get_hostname_url_report.gif)](readme-media/videos/get_hostname_url_report.mov)
+[![Get Hostname URL Report Walkthrough Video](readme-media/GIFs/get_hostname_url_report.gif)](https://youtu.be/qBqdGYLXNMY)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -476,7 +502,9 @@ _fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_passivedns_report $DstHostname
 ```
 
-[![Get Hostname Passive DNS Report Walkthrough Video](readme-media/GIFs/get_hostname_passivedns_report.gif)](readme-media/videos/get_hostname_passivedns_report.mov)
+[![Get Hostname Passive DNS Report Walkthrough Video](readme-media/GIFs/get_hostname_passivedns_report.gif)](https://youtu.be/Xp9A9KsoAX0)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -497,7 +525,9 @@ _fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_report $SrcIP
 ```
 
-[![Get IP Report Walkthrough Video](readme-media/GIFs/get_ip_report.gif)](readme-media/videos/get_ip_report.mov)
+[![Get IP Report Walkthrough Video](readme-media/GIFs/get_ip_report.gif)](https://youtu.be/d_s55Fo1Qcc)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -539,7 +569,9 @@ _fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_reputation_report $SrcIP
 ```
 
-[![Get IP Reputation Report Walkthrough Video](readme-media/GIFs/get_ip_reputation_report.gif)](readme-media/videos/get_ip_reputation_report.mov)
+[![Get IP Reputation Report Walkthrough Video](readme-media/GIFs/get_ip_reputation_report.gif)](https://youtu.be/Cz_q67WHveU)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -561,7 +593,9 @@ _fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_geo_report $SrcIP
 ```
 
-[![Get IP Geo Report Walkthrough Video](readme-media/GIFs/get_ip_geo_report.gif)](readme-media/videos/get_ip_geo_report.mov)
+[![Get IP Geo Report Walkthrough Video](readme-media/GIFs/get_ip_geo_report.gif)](https://youtu.be/NDCOdTqGMCI)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -588,7 +622,9 @@ _fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_malware_report $SrcIP
 ```
 
-[![Get IP Malware Report Walkthrough Video](readme-media/GIFs/get_ip_malware_report.gif)](readme-media/videos/get_ip_malware_report.mov)
+[![Get IP Malware Report Walkthrough Video](readme-media/GIFs/get_ip_malware_report.gif)](https://youtu.be/tj1IUbGnjUc)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -607,7 +643,9 @@ _fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_url_report $SrcIP
 ```
 
-[![Get IP URL Report Walkthrough Video](readme-media/GIFs/get_ip_url_report.gif)](readme-media/videos/get_ip_url_report.mov)
+[![Get IP URL Report Walkthrough Video](readme-media/GIFs/get_ip_url_report.gif)](https://youtu.be/O_3QhKm92j4)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
@@ -628,7 +666,9 @@ _fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_passivedns_report $SrcIP
 ```
 
-[![Get IP Passive DNS Report Walkthrough Video](readme-media/GIFs/get_ip_passivedns_report.gif)](readme-media/videos/get_ip_passivedns_report.mov)
+[![Get IP Passive DNS Report Walkthrough Video](readme-media/GIFs/get_ip_passivedns_report.gif)](https://youtu.be/ynKjHTBuCfk)
+
+Click the GIF above to view the high resolution video version.
 
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
