@@ -52,6 +52,8 @@ _fetch $Domain from threatsample limit 1
 >>_lookup alienvaultotx get_domain_report $Domain
 ```
 
+[![Get Domain Report 40 second walkthrough](https://github.com/advaitsaravade/lookup-alienvault-otx/readme-media/get_domain_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/readme-media/get_domain_report.gif)
+
 `threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -613,9 +615,9 @@ $cd /dnif/CnxxxxxxxxxxxxV8/lookup_plugins/
 ```
 3. ###### Clone using the following command  
 ```  
-git clone https://github.com/dnif/lookup-alienvaultotx.git alienvaultotx
+git clone https://github.com/dnif/lookup-alienvault-otx.git alienvault-otx
 ```
-4. ###### Move to the '/dnif/<Deployment-key>/lookup_plugins/alienvaultotx/' folder path and open dnifconfig.yml configuration file     
+4. ###### Move to the '/dnif/<Deployment-key>/lookup_plugins/alienvault-otx/' folder path and open dnifconfig.yml configuration file     
 
  Replace the tag: <Add_your_api_key_here> with your AlienVault API key which can be generated at https://otx.alienvault.com
 
