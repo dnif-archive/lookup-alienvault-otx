@@ -1,0 +1,5 @@
+$CVE,$URL,$SrcIP,$Filehash,$Domain,$Hostname,$SID,$Summary
+CVE-1999-0001,https://github.com/ytisf/theZoo/raw/master/malwares/Binaries/CryptoLocker_22Jan2014/CryptoLocker_22Jan2014.zip,144.217.74.156,db349b97c37d22f5ea1d1841e3c89eb4,iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com,mail.vspcord.com,2185,heartbleed
+CVE-2006-6183,,192.227.245.214,,xtracker.club,webmail-bb.adestramentoseguro.com.br,,
+CVE-2013-3568,,,,,,,
+CVE-2009-0692,,,,,,,
