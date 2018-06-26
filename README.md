@@ -52,7 +52,7 @@ _fetch $Domain from threatsample limit 1
 >>_lookup alienvaultotx get_domain_report $Domain
 ```
 
-[![Get Domain Report 40 second walkthrough](https://github.com/advaitsaravade/lookup-alienvault-otx/readme-media/get_domain_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/readme-media/get_domain_report.gif)
+[![Get Domain Report 40 second walkthrough](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/get_domain_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/get_domain_report.gif)
 
 `threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
