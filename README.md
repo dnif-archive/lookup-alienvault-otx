@@ -355,8 +355,8 @@ Click the GIF above to view the high resolution video version.
 Complete report of all threat indicators for a given hostname, including data from all the sub reports. Data returned includes pulse, geo, URL, passive DNS, and WHOIS analysis.
 
 ```
-_fetch $DstHostname from testingintegrations limit 1
->>_lookup alienvaultotx get_hostname_report $DstHostname
+_fetch $Hostname from testingintegrations limit 1
+>>_lookup alienvaultotx get_hostname_report $Hostname
 ```
 
 [![Get Hostname Report Walkthrough Video](readme-media/GIFs/get_hostname_report.gif)](https://youtu.be/Rcp9hFVu23E)
@@ -367,7 +367,7 @@ Click the GIF above to view the high resolution video version.
 
 |Field|Description|
 |-|-|
-| $DstHostname| Hostname being queried |
+| $Hostname| Hostname being queried |
 | $AVOTXPulseReferences| List of URLs and website links that were referenced to by individual OTX pulses regarding the given hostname |
 | $AVOTXPulseCount| Total number of OTX pulses that reference the given hostname |
 | $AVOTXPulseNames| List of titles given to pulses that reference the given hostname |
@@ -400,8 +400,8 @@ Click the GIF above to view the high resolution video version.
 Threat indicators for the given hostname, gathered from the OTX community pulse stream.
 
 ```
-_fetch $DstHostname from testingintegrations limit 1
->>_lookup alienvaultotx get_hostname_pulse_report $DstHostname
+_fetch $Hostname from testingintegrations limit 1
+>>_lookup alienvaultotx get_hostname_pulse_report $Hostname
 ```
 
 [![Get Hostname Pulse Report Walkthrough Video](readme-media/GIFs/get_hostname_pulse_report.gif)](https://youtu.be/RsFuaKEcD4g)
@@ -412,7 +412,7 @@ Click the GIF above to view the high resolution video version.
 
 |Field|Description|
 |-|-|
-| $DstHostname| Hostname being queried |
+| $Hostname| Hostname being queried |
 | $AVOTXPulseReferences| List of URLs and website links that were referenced to by individual OTX pulses regarding the given hostname |
 | $AVOTXPulseCount| Total number of OTX pulses that reference the given hostname |
 | $AVOTXPulseNames| List of titles given to pulses that reference the given hostname |
@@ -427,8 +427,8 @@ Click the GIF above to view the high resolution video version.
 Registered and inferred geographic information for a given hostname (city, country, postal etc).
 
 ```
-_fetch $DstHostname from testingintegrations limit 1
->>_lookup alienvaultotx get_hostname_geo_report $DstHostname
+_fetch $Hostname from testingintegrations limit 1
+>>_lookup alienvaultotx get_hostname_geo_report $Hostname
 ```
 
 [![Get Hostname Geo Report Walkthrough Video](readme-media/GIFs/get_hostname_geo_report.gif)](https://youtu.be/-WqHYS6ylio)
@@ -439,7 +439,7 @@ Click the GIF above to view the high resolution video version.
 
 |Field|Description|
 |-|-|
-| $DstHostname| Hostname being queried |
+| $Hostname| Hostname being queried |
 | $AVOTXGeoCity| City name of the given hostname's hosting server |
 | $AVOTXGeoRegion| Region name of the given hostname's hosting server |
 | $AVOTXGeoLatitude| Latitudinal location of the given hostname's hosting server |
@@ -456,8 +456,8 @@ Click the GIF above to view the high resolution video version.
 Malware samples analyzed by AlienVault Labs which have been observed connecting to the given hostname.
 
 ```
-_fetch $DstHostname from testingintegrations limit 1
->>_lookup alienvaultotx get_hostname_malware_report $DstHostname
+_fetch $Hostname from testingintegrations limit 1
+>>_lookup alienvaultotx get_hostname_malware_report $Hostname
 ```
 
 [![Get Hostname Malware Report Walkthrough Video](readme-media/GIFs/get_hostname_malware_report.gif)](https://youtu.be/BDnrIOhZ8m4)
@@ -468,7 +468,7 @@ Click the GIF above to view the high resolution video version.
 
 |Field|Description|
 |-|-|
-| $DstHostname| Hostname being queried |
+| $Hostname| Hostname being queried |
 | $AVOTXMalwareCount| Total number of malware samples analyzed by AlienVault Labs which have been observed connecting to the given hostname. |
 | $AVOTXMalwareSHA256Hashes| SHA256 hashes of malware files analyzed by AlienVault Labs which have been observed connecting to the given hostname. |
 
@@ -477,8 +477,8 @@ Click the GIF above to view the high resolution video version.
 Report of the URLs analyzed by AlienVault Labs on the given hostname.
 
 ```
-_fetch $DstHostname from testingintegrations limit 1
->>_lookup alienvaultotx get_hostname_url_report $DstHostname
+_fetch $Hostname from testingintegrations limit 1
+>>_lookup alienvaultotx get_hostname_url_report $Hostname
 ```
 
 [![Get Hostname URL Report Walkthrough Video](readme-media/GIFs/get_hostname_url_report.gif)](https://youtu.be/qBqdGYLXNMY)
@@ -489,7 +489,7 @@ Click the GIF above to view the high resolution video version.
 
 |Field|Description|
 |-|-|
-| $DstHostname| Hostname being queried |
+| $Hostname| Hostname being queried |
 | $AVOTXUrlHostnames| Hostnames analyzed by AlienVault Labs on the given hostname |
 | $AVOTXUrlIPs| List of IP addresses of the URLs on the hostname |
 | $AVOTXUrlActualSize| Count of the total number of URLs found on the given hostname |
@@ -500,8 +500,8 @@ Click the GIF above to view the high resolution video version.
 Passive DNS records observed by AlienVault to be pointing to the given hostname.
 
 ```
-_fetch $DstHostname from testingintegrations limit 1
->>_lookup alienvaultotx get_hostname_passivedns_report $DstHostname
+_fetch $Hostname from testingintegrations limit 1
+>>_lookup alienvaultotx get_hostname_passivedns_report $Hostname
 ```
 
 [![Get Hostname Passive DNS Report Walkthrough Video](readme-media/GIFs/get_hostname_passivedns_report.gif)](https://youtu.be/Xp9A9KsoAX0)
@@ -512,7 +512,7 @@ Click the GIF above to view the high resolution video version.
 
 |Field|Description|
 |-|-|
-| $DstHostname| Hostname being queried |
+| $Hostname| Hostname being queried |
 | $AVOTXPassiveDnsIPs| List of passive DNS IP addresses that were observed by AlienVault to be pointing to the given hostname |
 | $AVOTXPassiveDnsCountries| List of countries whose DNS IP addresses were observed by AlienVault to be pointing to the given hostname |
 | $AVOTXPassiveDnsCount| Total number of passive DNS IP addresses that were observed by AlienVault to be pointing to the given hostname |
