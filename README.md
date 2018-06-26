@@ -54,6 +54,8 @@ _fetch $Domain from testingintegrations limit 1
 
 [![Get Domain Report Walkthrough Video](readme-media/GIFs/get_domain_report.gif)](https://youtu.be/9zKyJSq5UpA)
 
+Click the GIF above to view the high resolution video version.
+
 `testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
