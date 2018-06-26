@@ -48,13 +48,13 @@ The following lookup reports can been generated in the [DNIF console](https://dn
 Complete report of all threat indicators for a given domain, including data from all the sub reports. Data returned includes pulse, geo, URL, passive DNS, and WHOIS analysis.
 
 ```
-_fetch $Domain from threatsample limit 1
+_fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_report $Domain
 ```
 
-[![Get Domain Report 40 second walkthrough](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/get_domain_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/get_domain_report.gif)
+[![Get Domain Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_domain_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_domain_report.mov)
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -107,11 +107,13 @@ _fetch $Domain from threatsample limit 1
 Threat indicators for the given domain, gathered from the OTX community pulse stream.
 
 ```
-_fetch $Domain from threatsample limit 1
+_fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_pulse_report $Domain
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Domain Pulse Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_domain_pulse_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_domain_pulse_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -130,11 +132,13 @@ _fetch $Domain from threatsample limit 1
 Registered and inferred geographic information for a given domain (city, country, postal etc).
 
 ```
-_fetch $Domain from threatsample limit 1
+_fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_geo_report $Domain
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Domain Geo Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_domain_geo_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_domain_geo_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -155,11 +159,13 @@ _fetch $Domain from threatsample limit 1
 Malware samples analyzed by AlienVault Labs which have been observed connecting to the given domain.
 
 ```
-_fetch $Domain from threatsample limit 1
+_fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_malware_report $Domain
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Domain Malware Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_domain_malware_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_domain_malware_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -172,11 +178,13 @@ _fetch $Domain from threatsample limit 1
 Report of the URLs analyzed by AlienVault Labs on the given domain.
 
 ```
-_fetch $Domain from threatsample limit 1
+_fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_url_report $Domain
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Domain URL Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_domain_url_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_domain_url_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -191,11 +199,13 @@ _fetch $Domain from threatsample limit 1
 Passive DNS records observed by AlienVault to be pointing to the given domain.
 
 ```
-_fetch $Domain from threatsample limit 1
+_fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_passivedns_report $Domain
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Domain Passive DNS Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_domain_passivedns_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_domain_passivedns_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -210,11 +220,13 @@ _fetch $Domain from threatsample limit 1
 WHOIS data captured for the given domain only (information regarding domains related to the given domain has not been added yet)
 
 ```
-_fetch $Domain from threatsample limit 1
+_fetch $Domain from testingintegrations limit 1
 >>_lookup alienvaultotx get_domain_whois_report $Domain
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Domain WHOIS Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_domain_whois_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_domain_whois_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -241,11 +253,13 @@ _fetch $Domain from threatsample limit 1
 Metadata about the file hash, as well as dynamic and static analysis of the given filehash (SHA1, MD5, or SHA256 acceptable)
 
 ```
-_fetch $Filehash from threatsample limit 1
+_fetch $Filehash from testingintegrations limit 1
 >>_lookup alienvaultotx get_hash_report $Filehash
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Hash Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_hash_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_hash_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -281,11 +295,13 @@ _fetch $Filehash from threatsample limit 1
 Historical geographic info, threat indicators gathered from the OTX community pulse stream, and AlienVault Labs URL Analysis results for the given URL
 
 ```
-_fetch $URL from threatsample limit 1
+_fetch $URL from testingintegrations limit 1
 >>_lookup alienvaultotx get_url_report $URL
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get URL Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_url_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_url_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -321,11 +337,13 @@ _fetch $URL from threatsample limit 1
 Complete report of all threat indicators for a given hostname, including data from all the sub reports. Data returned includes pulse, geo, URL, passive DNS, and WHOIS analysis.
 
 ```
-_fetch $DstHostname from threatsample limit 1
+_fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_report $DstHostname
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Hostname Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_hostname_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_hostname_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -362,11 +380,13 @@ _fetch $DstHostname from threatsample limit 1
 Threat indicators for the given hostname, gathered from the OTX community pulse stream.
 
 ```
-_fetch $DstHostname from threatsample limit 1
+_fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_pulse_report $DstHostname
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Hostname Pulse Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_hostname_pulse_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_hostname_pulse_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -385,11 +405,13 @@ _fetch $DstHostname from threatsample limit 1
 Registered and inferred geographic information for a given hostname (city, country, postal etc).
 
 ```
-_fetch $DstHostname from threatsample limit 1
+_fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_geo_report $DstHostname
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Hostname Geo Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_hostname_geo_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_hostname_geo_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -410,11 +432,13 @@ _fetch $DstHostname from threatsample limit 1
 Malware samples analyzed by AlienVault Labs which have been observed connecting to the given hostname.
 
 ```
-_fetch $DstHostname from threatsample limit 1
+_fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_malware_report $DstHostname
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Hostname Malware Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_hostname_malware_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_hostname_malware_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -427,11 +451,13 @@ _fetch $DstHostname from threatsample limit 1
 Report of the URLs analyzed by AlienVault Labs on the given hostname.
 
 ```
-_fetch $DstHostname from threatsample limit 1
+_fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_url_report $DstHostname
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Hostname URL Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_hostname_url_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_hostname_url_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -446,11 +472,13 @@ _fetch $DstHostname from threatsample limit 1
 Passive DNS records observed by AlienVault to be pointing to the given hostname.
 
 ```
-_fetch $DstHostname from threatsample limit 1
+_fetch $DstHostname from testingintegrations limit 1
 >>_lookup alienvaultotx get_hostname_passivedns_report $DstHostname
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get Hostname Passive DNS Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_hostname_passivedns_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_hostname_passivedns_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -465,11 +493,13 @@ _fetch $DstHostname from threatsample limit 1
 Complete report of all threat indicators for a given IP, including data from all the sub reports. Data returned includes pulse, geo, URL, passive DNS, and WHOIS analysis.
 
 ```
-_fetch $SrcIP from threatsample limit 1
+_fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_report $SrcIP
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get IP Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_ip_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_ip_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -505,11 +535,13 @@ _fetch $SrcIP from threatsample limit 1
 OTX data on malicious activity observed by AlienVault Labs (IP Reputation).
 
 ```
-_fetch $SrcIP from threatsample limit 1
+_fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_reputation_report $SrcIP
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get IP Reputation Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_ip_reputation_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_ip_reputation_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -525,11 +557,13 @@ _fetch $SrcIP from threatsample limit 1
 Registered and inferred geographic information for a given IP (city, country, postal etc).
 
 ```
-_fetch $SrcIP from threatsample limit 1
+_fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_geo_report $SrcIP
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get IP Geo Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_ip_geo_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_ip_geo_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -550,11 +584,13 @@ _fetch $SrcIP from threatsample limit 1
 Malware samples analyzed by AlienVault Labs which have been observed connecting to the given IP.
 
 ```
-_fetch $SrcIP from threatsample limit 1
+_fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_malware_report $SrcIP
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get IP Malware Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_ip_malware_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_ip_malware_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -567,11 +603,13 @@ _fetch $SrcIP from threatsample limit 1
 Report of the URLs analyzed by AlienVault Labs on the given IP.
 
 ```
-_fetch $SrcIP from threatsample limit 1
+_fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_url_report $SrcIP
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get IP URL Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_ip_url_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_ip_url_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
@@ -586,11 +624,13 @@ _fetch $SrcIP from threatsample limit 1
 Passive DNS records observed by AlienVault to be pointing to the given IP.
 
 ```
-_fetch $SrcIP from threatsample limit 1
+_fetch $SrcIP from testingintegrations limit 1
 >>_lookup alienvaultotx get_IP_passivedns_report $SrcIP
 ```
 
-`threatsample` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
+[![Get IP Passive DNS Report Walkthrough Video](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/GIFs/get_ip_passivedns_report.gif)](https://github.com/advaitsaravade/lookup-alienvault-otx/raw/master/readme-media/videos/get_ip_passivedns_report.mov)
+
+`testingintegrations` is a DNIF event store that can be uploaded for testing. The lookup call returns output in the following structure for available data
 
 |Field|Description|
 |-|-|
