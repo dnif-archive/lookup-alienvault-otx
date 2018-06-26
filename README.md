@@ -691,11 +691,11 @@ The AlienVault OTX API can be found on the Alien Vault website at
 
 1. ###### Login to your Data Store, Correlator, and A10 containers.  
    [ACCESS DNIF CONTAINER VIA SSH](https://dnif.it/docs/guides/tutorials/access-dnif-container-via-ssh.html)
-2. ###### Move to the ‘/dnif/<Deployment-key/lookup_plugins’ folder path.
+2. ###### Move to the ‘/dnif/<Deployment-key>/lookup_plugins’ folder path.
 ```
 $cd /dnif/CnxxxxxxxxxxxxV8/lookup_plugins/
 ```
-3. ###### Clone using the following command  
+3. ###### Clone using the following command
 ```  
 git clone https://github.com/dnif/lookup-alienvault-otx.git alienvault-otx
 ```
