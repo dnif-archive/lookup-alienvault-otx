@@ -691,7 +691,7 @@ The AlienVault OTX API can be found on the Alien Vault website at
 
 1. ###### Login to your Data Store, Correlator, and A10 containers.  
    [ACCESS DNIF CONTAINER VIA SSH](https://dnif.it/docs/guides/tutorials/access-dnif-container-via-ssh.html)
-2. ###### Move to the ‘/dnif/<Deployment-key>/lookup_plugins’ folder path.
+2. ###### Move to the `/dnif/<Deployment-key>/lookup_plugins` folder path.
 ```
 $cd /dnif/CnxxxxxxxxxxxxV8/lookup_plugins/
 ```
@@ -699,7 +699,7 @@ $cd /dnif/CnxxxxxxxxxxxxV8/lookup_plugins/
 ```  
 git clone https://github.com/dnif/lookup-alienvault-otx.git alienvault-otx
 ```
-4. ###### Move to the '/dnif/<Deployment-key>/lookup_plugins/alienvault-otx/' folder path and open dnifconfig.yml configuration file     
+4. ###### Move to the `/dnif/<Deployment-key>/lookup_plugins/alienvault-otx/` folder path and open dnifconfig.yml configuration file     
 
  Replace the tag: <Add_your_api_key_here> with your AlienVault API key which can be generated at https://otx.alienvault.com
 
