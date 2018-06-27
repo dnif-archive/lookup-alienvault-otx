@@ -13,36 +13,6 @@ The OTX platform consists of two chief components:
 
 **IP Reputation** — Provides notification of communication between known malicious hosts and your assets.
 
-## Generate lookup reports using [DNIF](https://dnif.it/) console
-
-The following lookup reports can been generated in the [DNIF console](https://dnif.it/docs/learn/DQL/index.html) using data from the AlienVault OTX integration:
-
-* [Domain report](#domain-report) - Complete report of all threat indicators for a given domain, including data from all the sub reports below.
-  * [Domain Pulse report](#domain-pulse-report) - Threat indicators for a given domain gathered from the OTX community pulse stream.
-  * [Domain Geo report](#domain-geo-report) - Registered and inferred geographic information for a given domain (city, country, postal etc).
-  * [Domain Malware report](#domain-malware-report) - Malware samples analyzed by AlienVault Labs which have been observed connecting to the given domain.
-  * [Domain URL report](#domain-url-report) - Report of URLs analyzed by AlienVault Labs on the given domain.
-  * [Domain Passive DNS report](#domain-passive-dns-report) - Passive DNS records observed by AlienVault to be pointing to the given domain.
-  * [Domain WHOIS report](#domain-whois-report) - WHOIS data captured for the given domain only (information regarding domains related to the given domain has not been added yet).
-
-* [Filehash report](#filehash-report) - Metadata about the file hash, as well as dynamic and static analysis of the given filehash.
-
-* [URL report](#url-report) - Historical geographic info, threat indicators gathered from the OTX community pulse stream, and AlienVault Labs URL Analysis results for the given URL.
-
-* [Hostname report](#hostname-report) - Complete report of all threat indicators for a given hostname, including data from all the sub reports below.
-  * [Hostname Pulse report](#hostname-pulse-report) - Threat indicators for a given hostname gathered from the OTX community pulse stream.
-  * [Hostname Geo report](#hostname-geo-report) - Registered and inferred geographic information for a given hostname (city, country, postal etc).
-  * [Hostname Malware report](#hostname-malware-report) - Malware samples analyzed by AlienVault Labs which have been observed connecting to this hostname.
-  * [Hostname URL report](#hostname-url-report) - Analysis of URLs found on the given hostname.
-  * [Hostname Passive DNS report](#hostname-passive-dns-report) - Passive DNS records observed by AlienVault to be pointing to this hostname.
-
-* [IP report](#IP-report) - Complete report of all threat indicators for a given IP (IPv4 or IPv6), including data from all the sub reports below.
-  * [IP Reputation report](#IP-reputation-report) - OTX data on malicious activity observed by AlienVault Labs (IP Reputation).
-  * [IP Geo report](#IP-geo-report) - Registered and inferred geographic information for a given IP (city, country, postal etc).
-  * [IP Malware report](#IP-malware-report) - Malware samples analyzed by AlienVault Labs which have been observed connecting to this IP.
-  * [IP URL report](#IP-url-report) - Analysis of URLs found on the given IP.
-  * [IP Passive DNS report](#IP-passive-dns-report) - Passive DNS records observed by AlienVault to be pointing to this IP.
-
 #### Domain Report
 
 Complete report of all threat indicators for a given domain, including data from all the sub reports. Data returned includes pulse, geo, URL, passive DNS, and WHOIS analysis.
