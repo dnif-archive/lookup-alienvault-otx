@@ -1,11 +1,10 @@
 import yaml
 import os
 import requests
-import json
 
 path = os.environ["WORKDIR"]
 with open(path + "/lookup_plugins/alienvault-otx/dnifconfig.yml", 'r') as ymlfile:
-    cfg = yaml.load(ymlfile)
+    cfg = yaml.safe_load(ymlfile)
 
 def execute():
     print "hello the world!"
