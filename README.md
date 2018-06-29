@@ -13,7 +13,7 @@ The OTX platform consists of two chief components:
 
 **IP Reputation** — Provides notification of communication between known malicious hosts and your assets.
 
-#### Domain Report
+### Domain Report
 
 Complete report of all threat indicators for a given domain, including data from all the sub reports. Data returned includes pulse, geo, URL, passive DNS, and WHOIS analysis.
 
@@ -74,7 +74,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXWhoisCreationDate| WHOIS information about the given domain's creation date |
 | $AVOTXWhoisExpirationDate| WHOIS information about the given domain's expiration date |
 
-#### Domain Pulse Report
+### Domain Pulse Report
 
 Threat indicators for the given domain, gathered from the OTX community pulse stream.
 
@@ -101,7 +101,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXPulseTargetsCountries| List of countries in the OTX pulses that have been observed to be targeted by this domain's malware |
 | $AVOTXPulseTargetsIndustries| List of industries in the OTX pulses that have been observed to be targeted by this domain's malware |
 
-#### Domain Geo Report
+### Domain Geo Report
 
 Registered and inferred geographic information for a given domain (city, country, postal etc).
 
@@ -130,7 +130,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXGeoPostalCode| The postal code the given domain's hosting server's are located in |
 | $AVOTXGeoCountryCode| The country code (2 alphanumeric characters) of the domain's hosting server location |
 
-#### Domain Malware Report
+### Domain Malware Report
 
 Malware samples analyzed by AlienVault Labs which have been observed connecting to the given domain.
 
@@ -151,7 +151,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXMalwareCount| Total number of malware samples analyzed by AlienVault Labs which have been observed connecting to the given domain. |
 | $AVOTXMalwareSHA256Hashes| SHA256 hashes of malware files analyzed by AlienVault Labs which have been observed connecting to the given domain. |
 
-#### Domain URL Report
+### Domain URL Report
 
 Report of the URLs analyzed by AlienVault Labs on the given domain.
 
@@ -174,7 +174,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXUrlActualSize| Count of the total number of URLs found on the given domain |
 | $AVOTXUrls| List of URLs on the domain |
 
-#### Domain Passive DNS Report
+### Domain Passive DNS Report
 
 Passive DNS records observed by AlienVault to be pointing to the given domain.
 
@@ -197,7 +197,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXPassiveDnsCount| Total number of passive DNS IP addresses that were observed by AlienVault to be pointing to the given domain |
 | $AVOTXPassiveDnsHostnames| List of hostnames whose hostnames were observed by AlienVault to be pointing to the given domain |
 
-#### Domain WHOIS Report
+### Domain WHOIS Report
 
 WHOIS data captured for the given domain only (information regarding domains related to the given domain has not been added yet)
 
@@ -232,7 +232,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXWhoisCreationDate| WHOIS information about the given domain's creation date |
 | $AVOTXWhoisExpirationDate| WHOIS information about the given domain's expiration date |
 
-#### Filehash Report
+### Filehash Report
 
 Metadata about the file hash, as well as dynamic and static analysis of the given filehash (SHA1, MD5, or SHA256 acceptable)
 
@@ -276,7 +276,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXVirusTotalSignatures| List of signatures that matched the given hash to a known malware (via Virus Total) |
 | $AVOTXVirusTotalTotalChecks| Total number of threat detection services that were queried about the given hash (via Virus Total) |
 
-#### URL Report
+### URL Report
 
 Historical geographic info, threat indicators gathered from the OTX community pulse stream, and AlienVault Labs URL Analysis results for the given URL
 
@@ -320,7 +320,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXPulseTargetsCountries| List of countries in the OTX pulses that have been observed to be targeted by this URL's malware |
 | $AVOTXPulseTargetsIndustries| List of industries in the OTX pulses that have been observed to be targeted by this URL's malware |
 
-#### Hostname Report
+### Hostname Report
 
 Complete report of all threat indicators for a given hostname, including data from all the sub reports. Data returned includes pulse, geo, URL, passive DNS, and WHOIS analysis.
 
@@ -365,7 +365,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXPassiveDnsCount| Total number of passive DNS IP addresses that were observed by AlienVault to be pointing to the given hostname |
 | $AVOTXPassiveDnsHostnames| List of hostnames whose hostnames were observed by AlienVault to be pointing to the given hostname |
 
-#### Hostname Pulse Report
+### Hostname Pulse Report
 
 Threat indicators for the given hostname, gathered from the OTX community pulse stream.
 
@@ -392,7 +392,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXPulseTargetsCountries| List of countries in the OTX pulses that have been observed to be targeted by this hostname's malware |
 | $AVOTXPulseTargetsIndustries| List of industries in the OTX pulses that have been observed to be targeted by this hostname's malware |
 
-#### Hostname Geo Report
+### Hostname Geo Report
 
 Registered and inferred geographic information for a given hostname (city, country, postal etc).
 
@@ -421,7 +421,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXGeoPostalCode| The postal code the given hostname's hosting server's are located in |
 | $AVOTXGeoCountryCode| The country code (2 alphanumeric characters) of the hostname's hosting server location |
 
-#### Hostname Malware Report
+### Hostname Malware Report
 
 Malware samples analyzed by AlienVault Labs which have been observed connecting to the given hostname.
 
@@ -442,7 +442,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXMalwareCount| Total number of malware samples analyzed by AlienVault Labs which have been observed connecting to the given hostname. |
 | $AVOTXMalwareSHA256Hashes| SHA256 hashes of malware files analyzed by AlienVault Labs which have been observed connecting to the given hostname. |
 
-#### Hostname URL Report
+### Hostname URL Report
 
 Report of the URLs analyzed by AlienVault Labs on the given hostname.
 
@@ -465,7 +465,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXUrlActualSize| Count of the total number of URLs found on the given hostname |
 | $AVOTXUrls| List of URLs on the hostname |
 
-#### Hostname Passive DNS Report
+### Hostname Passive DNS Report
 
 Passive DNS records observed by AlienVault to be pointing to the given hostname.
 
@@ -488,7 +488,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXPassiveDnsCount| Total number of passive DNS IP addresses that were observed by AlienVault to be pointing to the given hostname |
 | $AVOTXPassiveDnsHostnames| List of hostnames whose hostnames were observed by AlienVault to be pointing to the given hostname |
 
-#### IP Report
+### IP Report
 
 Complete report of all threat indicators for a given IP, including data from all the sub reports. Data returned includes pulse, geo, URL, passive DNS, and WHOIS analysis.
 
@@ -532,7 +532,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXPassiveDnsCount| Total number of passive DNS IP addresses that were observed by AlienVault to be pointing to the given IP |
 | $AVOTXPassiveDnsHostnames| List of IPs whose IPs were observed by AlienVault to be pointing to the given IP |
 
-#### IP Reputation Report
+### IP Reputation Report
 
 OTX data on malicious activity observed by AlienVault Labs (IP Reputation).
 
@@ -556,7 +556,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXReputationThreatScore| The Alien Vault Labs threat score for the given IP |
 | $AVOTXReputationThreatTypes| List of threat types of the malicious activities that have been traced to the given IP |
 
-#### IP Geo Report
+### IP Geo Report
 
 Registered and inferred geographic information for a given IP (city, country, postal etc).
 
@@ -585,7 +585,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXGeoPostalCode| The postal code the given IP's hosting server's are located in |
 | $AVOTXGeoCountryCode| The country code (2 alphanumeric characters) of the IP's hosting server location |
 
-#### IP Malware Report
+### IP Malware Report
 
 Malware samples analyzed by AlienVault Labs which have been observed connecting to the given IP.
 
@@ -606,7 +606,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXMalwareCount| Total number of malware samples analyzed by AlienVault Labs which have been observed connecting to the given IP. |
 | $AVOTXMalwareSHA256Hashes| SHA256 hashes of malware files analyzed by AlienVault Labs which have been observed connecting to the given IP. |
 
-#### IP URL Report
+### IP URL Report
 
 Report of the URLs analyzed by AlienVault Labs on the given IP.
 
@@ -629,7 +629,7 @@ Click the GIF above to view the high resolution video version.
 | $AVOTXUrlActualSize| Count of the total number of URLs found on the given IP |
 | $AVOTXUrls| List of URLs on the IP |
 
-#### IP Passive DNS Report
+### IP Passive DNS Report
 
 Passive DNS records observed by AlienVault to be pointing to the given IP.
 
@@ -657,11 +657,11 @@ The AlienVault OTX API can be found on the Alien Vault website at
 
   https://otx.alienvault.com/api
 
-#### Getting started with AlienVault OTX API with DNIF
+### Getting started with AlienVault OTX API with DNIF
 
 1. ###### Login to your Data Store, Correlator, and A10 containers.  
    [ACCESS DNIF CONTAINER VIA SSH](https://dnif.it/docs/guides/tutorials/access-dnif-container-via-ssh.html)
-2. ###### Move to the `/dnif/<Deployment-key>/lookup_plugins` folder path.
+2. ##### Move to the `/dnif/<Deployment-key>/lookup_plugins` folder path.
 ```
 $cd /dnif/CnxxxxxxxxxxxxV8/lookup_plugins/
 ```
