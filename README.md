@@ -1,5 +1,7 @@
 # AlienVault OTX (Open Threat Exchange)
 
+https://otx.alienvault.com
+
 ## Overview
 The [AlienVault Open Threat Exchange (OTX)](https://otx.alienvault.com) is the world’s most authoritative open threat information sharing and analysis network. OTX provides access to a global community of threat researchers and security professionals, with more than 50,000 participants in 140 countries, who contribute over four million threat indicators daily. OTX allows anyone in the security community to actively discuss, research, validate, and share the latest threat data, trends, and techniques.
 
