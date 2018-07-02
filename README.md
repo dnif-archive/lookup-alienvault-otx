@@ -5,15 +5,7 @@ https://otx.alienvault.com
 ## Overview
 The [AlienVault Open Threat Exchange (OTX)](https://otx.alienvault.com) is the world’s most authoritative open threat information sharing and analysis network. OTX provides access to a global community of threat researchers and security professionals, with more than 50,000 participants in 140 countries, who contribute over four million threat indicators daily. OTX allows anyone in the security community to actively discuss, research, validate, and share the latest threat data, trends, and techniques.
 
-The OTX community reports on and receives threat data in the form of pulses. An OTX pulse consists of one or more indicators of compromise (IOCs) that constitute a threat or define a sequence of actions that could be used to carry out attacks on networks devices and computers. OTX pulses also provide information on the reliability of threat information, who reported a threat, and other details of threat investigations.
-
-OTX data can be used to enhance the threat detection capabilities, of security monitoring systems such as DNIF.
-
-The OTX platform consists of two chief components:
-
-**Pulses** — Collections of indicators of compromise (IOCs), reported by the OTX community, which other community members review and comment on. Pulses provide you with a summary of the threat, a view into the software targeted, and the related IOCs, reported by the OTX community worldwide.
-
-**IP Reputation** — Provides notification of communication between known malicious hosts and your assets.
+OTX provides information on the reliability of threat information, who reported a threat, and other details of threat investigations. OTX data can be used to enhance the threat detection capabilities, of security monitoring systems such as DNIF.
 
 ### Domain Report
 
