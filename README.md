@@ -27,7 +27,8 @@ _fetch $Domain from testingintegrations limit 1
 
 ###### Sample walkthrough video for domain report
 
-[[Get Domain Report Walkthrough Video](https://drive.google.com/open?id=1jnymxp4w5sVJBTOxg5YN248HF4bWADAC)
+[Get Domain Report Walkthrough Video](https://drive.google.com/open?id=1jnymxp4w5sVJBTOxg5YN248HF4bWADAC)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -90,6 +91,7 @@ _fetch $Domain from testingintegrations limit 1
 ###### Sample walkthrough video for domain pulse report
 
 [Get Domain Pulse Report Walkthrough Video](https://drive.google.com/open?id=1AeBCjg5yiITU7adj6WMeIVDtDED1IMtc)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -118,6 +120,7 @@ _fetch $Domain from testingintegrations limit 1
 ###### Sample walkthrough video for domain geo report
 
 [Get Domain Geo Report Walkthrough Video](https://drive.google.com/open?id=1yzrlGK-1Aql3uGryZ5Zbm_B-azNc9Wg-)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -148,6 +151,7 @@ _fetch $Domain from testingintegrations limit 1
 ###### Sample walkthrough video for domain malware report
 
 [Get Domain Malware Report Walkthrough Video](https://drive.google.com/open?id=1eZsUaQgCRZXbv-hqFrBGOullT2xQm0fa)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -170,6 +174,7 @@ _fetch $Domain from testingintegrations limit 1
 ###### Sample walkthrough video for domain URL report
 
 [Get Domain URL Report Walkthrough Video](https://drive.google.com/open?id=1dYxNyz33X-0hvvPC9aYqrqa9v_x0B0Qa)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -194,6 +199,7 @@ _fetch $Domain from testingintegrations limit 1
 ###### Sample walkthrough video for domain passive DNS report
 
 [Get Domain Passive DNS Report Walkthrough Video](https://drive.google.com/open?id=1kFHN4ur_nvDl0tWCeg2lOIbXYrpudk08)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -218,6 +224,7 @@ _fetch $Domain from testingintegrations limit 1
 ###### Sample walkthrough video for domain WHOIS report
 
 [Get Domain WHOIS Report Walkthrough Video](https://drive.google.com/open?id=1iJLhQEZ4cqn85HaCCM0dinDTghi2mzTy)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -254,6 +261,7 @@ _fetch $Filehash from testingintegrations limit 1
 ###### Sample walkthrough video for filehash report
 
 [Get Hash Report Walkthrough Video](https://drive.google.com/open?id=1VBSL4zYy72TxpKCioc7ycmBBXsFioYL-)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -299,6 +307,7 @@ _fetch $URL from testingintegrations limit 1
 ###### Sample walkthrough video for URL report
 
 [Get URL Report Walkthrough Video](https://drive.google.com/open?id=1JvMN84a0yyqrDopqTLVrP1sIXdEqvYJA)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -344,6 +353,7 @@ _fetch $Hostname from testingintegrations limit 1
 ###### Sample walkthrough video for hostname report
 
 [Get Hostname Report Walkthrough Video](https://drive.google.com/open?id=10VUhVhdfxrdxGu6Jl9LEMieoL5Tp7uGX)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -390,6 +400,7 @@ _fetch $Hostname from testingintegrations limit 1
 ###### Sample walkthrough video for hostname pulse report
 
 [Get Hostname Pulse Report Walkthrough Video](https://drive.google.com/open?id=1gNoD2lwKnHPSHdfGk_9-3Hz_cDkADOSc)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -418,6 +429,7 @@ _fetch $Hostname from testingintegrations limit 1
 ###### Sample walkthrough video for hostname geo report
 
 [Get Hostname Geo Report Walkthrough Video](https://drive.google.com/open?id=1508q0odc8tIIthJBlgHQqrvEc4zLRlrb)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -448,6 +460,7 @@ _fetch $Hostname from testingintegrations limit 1
 ###### Sample walkthrough video for hostname malware report
 
 [Get Hostname Malware Report Walkthrough Video](https://drive.google.com/open?id=1nyA9uf2ung5vw1G86UTCuivb9kbO9-qX)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -470,6 +483,7 @@ _fetch $Hostname from testingintegrations limit 1
 ###### Sample walkthrough video for hostname URL report
 
 [Get Hostname URL Report Walkthrough Video](https://drive.google.com/open?id=1CZ6drOjXC4GfUiJqpsMmvpNjdc3-Tlhz)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -494,6 +508,7 @@ _fetch $Hostname from testingintegrations limit 1
 ###### Sample walkthrough video for hostname passive DNS report
 
 [Get Hostname Passive DNS Report Walkthrough Video](https://drive.google.com/open?id=1SBiOmY42NU0_OmwYB-kVX1d0aLz4FWQZ)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -518,6 +533,7 @@ _fetch $SrcIP from testingintegrations limit 1
 ###### Sample walkthrough video for IP report
 
 [Get IP Report Walkthrough Video](https://drive.google.com/open?id=1jWZzrjoL8E_GE1joqim53D9R8AdsYooq)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -563,6 +579,7 @@ _fetch $SrcIP from testingintegrations limit 1
 ###### Sample walkthrough video for IP reputation report
 
 [Get IP Reputation Report Walkthrough Video](https://drive.google.com/open?id=1UmhULCl7-AjYH6xvWVxvST94KfgWAgIC)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -588,6 +605,7 @@ _fetch $SrcIP from testingintegrations limit 1
 ###### Sample walkthrough video for IP geo report
 
 [Get IP Geo Report Walkthrough Video](https://drive.google.com/open?id=1oiWY0mgR6l1Ryd8osoYPHNnjcHvg0T8K)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -618,6 +636,7 @@ _fetch $SrcIP from testingintegrations limit 1
 ###### Sample walkthrough video for IP malware report
 
 [Get IP Malware Report Walkthrough Video](https://drive.google.com/open?id=1GrOQOl9xbemGxkRMApu1S9MlUpiLCA8B)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -640,6 +659,7 @@ _fetch $SrcIP from testingintegrations limit 1
 ###### Sample walkthrough video for IP URL report
 
 [Get IP URL Report Walkthrough Video](https://drive.google.com/open?id=1FqO6vPs2sRyxnRmIzSrK1X2KGTw9Dc2o)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
@@ -664,6 +684,7 @@ _fetch $SrcIP from testingintegrations limit 1
 ###### Sample walkthrough video for IP passive DNS report
 
 [Get IP Passive DNS Report Walkthrough Video](https://drive.google.com/open?id=1IWXxSeeVQ4yJ4_YllvO4UZXo29sO6rWX)
+
 The lookup call returns output in the following structure for available data
 
 |Field|Description|
