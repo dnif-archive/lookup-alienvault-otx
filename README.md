@@ -527,7 +527,7 @@ Complete report of all threat indicators for a given IP, including data from all
 
 ```
 _fetch $SrcIP from testingintegrations limit 1
->>_lookup alienvault-otx get_IP_report $SrcIP
+>>_lookup alienvault-otx get_ip_report $SrcIP
 ```
 
 ###### Sample walkthrough video for IP report
@@ -573,7 +573,7 @@ OTX data on malicious activity observed by AlienVault Labs (IP Reputation).
 
 ```
 _fetch $SrcIP from testingintegrations limit 1
->>_lookup alienvault-otx get_IP_reputation_report $SrcIP
+>>_lookup alienvault-otx get_ip_reputation_report $SrcIP
 ```
 
 ###### Sample walkthrough video for IP reputation report
@@ -599,7 +599,7 @@ Registered and inferred geographic information for a given IP (city, country, po
 
 ```
 _fetch $SrcIP from testingintegrations limit 1
->>_lookup alienvault-otx get_IP_geo_report $SrcIP
+>>_lookup alienvault-otx get_ip_geo_report $SrcIP
 ```
 
 ###### Sample walkthrough video for IP geo report
@@ -630,7 +630,7 @@ Malware samples analyzed by AlienVault Labs which have been observed connecting 
 
 ```
 _fetch $SrcIP from testingintegrations limit 1
->>_lookup alienvault-otx get_IP_malware_report $SrcIP
+>>_lookup alienvault-otx get_ip_malware_report $SrcIP
 ```
 
 ###### Sample walkthrough video for IP malware report
@@ -653,7 +653,7 @@ Report of the URLs analyzed by AlienVault Labs on the given IP.
 
 ```
 _fetch $SrcIP from testingintegrations limit 1
->>_lookup alienvault-otx get_IP_url_report $SrcIP
+>>_lookup alienvault-otx get_ip_url_report $SrcIP
 ```
 
 ###### Sample walkthrough video for IP URL report
@@ -678,7 +678,7 @@ Passive DNS records observed by AlienVault to be pointing to the given IP.
 
 ```
 _fetch $SrcIP from testingintegrations limit 1
->>_lookup alienvault-otx get_IP_passivedns_report $SrcIP
+>>_lookup alienvault-otx get_ip_passivedns_report $SrcIP
 ```
 
 ###### Sample walkthrough video for IP passive DNS report
