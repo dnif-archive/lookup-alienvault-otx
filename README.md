@@ -25,11 +25,10 @@ This function returns a complete report of all threat indicators for a given dom
 - Domain name
 
 #### Example
-
+```
 _fetch $Domain from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_domain_report $Domain
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1jnymxp4w5sVJBTOxg5YN248HF4bWADAC) to view the output of the above example.
@@ -91,11 +90,10 @@ This function returns threat indicators for the given domain, gathered from the 
 - Domain name
 
 #### Example
-
+```
 _fetch $Domain from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_domain_pulse_report $Domain
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1AeBCjg5yiITU7adj6WMeIVDtDED1IMtc) to view the output of the above example.
@@ -123,11 +121,10 @@ This function returns registered and inferred geographic information for the giv
 - Domain name
 
 #### Example
-
+```
 _fetch $Domain from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_domain_geo_report $Domain
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1yzrlGK-1Aql3uGryZ5Zbm_B-azNc9Wg-) to view the output of the above example.
@@ -157,11 +154,10 @@ This function returns malware samples connecting to the given domain, as analyze
 - Domain name
 
 #### Example
-
+```
 _fetch $Domain from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_domain_malware_report $Domain
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1eZsUaQgCRZXbv-hqFrBGOullT2xQm0fa) to view the output of the above example.
@@ -183,11 +179,10 @@ This function returns a report of the URL(s) in the given domain, as analyzed by
 - Domain name
 
 #### Example
-
+```
 _fetch $Domain from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_domain_url_report $Domain
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1dYxNyz33X-0hvvPC9aYqrqa9v_x0B0Qa) to view the output of the above example.
@@ -211,11 +206,10 @@ The function returns passive DNS records pointing to the given domain, as analyz
 - Domain name
 
 #### Example
-
+```
 _fetch $Domain from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_domain_passivedns_report $Domain
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1kFHN4ur_nvDl0tWCeg2lOIbXYrpudk08) to view the output of the above example.
@@ -239,11 +233,10 @@ This function returns the WHOIS data captured for the given domain. Information 
 - Domain name
 
 #### Example
-
+```
 _fetch $Domain from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_domain_whois_report $Domain
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1iJLhQEZ4cqn85HaCCM0dinDTghi2mzTy) to view the output of the above example.
@@ -279,11 +272,10 @@ This function returns the metadata about the file hash, as well as dynamic and s
 - File hash (SHA1, MD5, or SHA256)
 
 #### Example
-
+```
 _fetch $Filehash from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_hash_report $Filehash
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1VBSL4zYy72TxpKCioc7ycmBBXsFioYL-) to view the output of the above example.
@@ -332,11 +324,10 @@ This function returns the following information for the given URL:
 - URL
 
 #### Example
-
+```
 _fetch $URL from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_url_report $URL
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1JvMN84a0yyqrDopqTLVrP1sIXdEqvYJA) to view the output of the above example.
@@ -381,11 +372,10 @@ This function returns a complete report of all threat indicators for a given hos
 - Host name
 
 #### Example
-
+```
 _fetch $Hostname from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_hostname_report $Hostname
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=10VUhVhdfxrdxGu6Jl9LEMieoL5Tp7uGX) to view the output of the above example.
@@ -431,11 +421,10 @@ This function returns threat indicators for the given hostname, gathered from th
 - Host name
 
 #### Example
-
+```
 _fetch $Hostname from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_hostname_pulse_report $Hostname
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1gNoD2lwKnHPSHdfGk_9-3Hz_cDkADOSc) to view the output of the above example.
@@ -463,11 +452,10 @@ This function returns registered and inferred geographic information for a given
 - Host name
 
 #### Example
-
+```
 _fetch $Hostname from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_hostname_geo_report $Hostname
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1508q0odc8tIIthJBlgHQqrvEc4zLRlrb) to view the output of the above example.
@@ -497,11 +485,10 @@ This function returns malware samples analyzed by AlienVault Labs that have been
 - Host name
 
 #### Example
-
+```
 _fetch $Hostname from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_hostname_malware_report $Hostname
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1nyA9uf2ung5vw1G86UTCuivb9kbO9-qX) to view the output of the above example.
@@ -523,11 +510,10 @@ This function returns a report of the URL(s), in the given hostname, analyzed by
 - Host name
 
 #### Example
-
+```
 _fetch $Hostname from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_hostname_url_report $Hostname
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1CZ6drOjXC4GfUiJqpsMmvpNjdc3-Tlhz) to view the output of the above example.
@@ -551,11 +537,10 @@ This function returns passive DNS records pointing to the given hostname, asanal
 - Host name
 
 #### Example
-
+```
 _fetch $Hostname from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_hostname_passivedns_report $Hostname
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1SBiOmY42NU0_OmwYB-kVX1d0aLz4FWQZ) to view the output of the above example.
@@ -579,11 +564,10 @@ This function returns a complete report of all threat indicators for a given IP 
 - IP address (IPv4 or IPv6)
 
 #### Example
-
+```
 _fetch $SrcIP from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_ip_report $SrcIP
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1jWZzrjoL8E_GE1joqim53D9R8AdsYooq) to view the output of the above example.
@@ -628,11 +612,10 @@ This function returns IP reputation data for the given IP address, as analyzed b
 - IP address (IPv4 or IPv6)
 
 #### Example
-
+```
 _fetch $SrcIP from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_ip_reputation_report $SrcIP
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1UmhULCl7-AjYH6xvWVxvST94KfgWAgIC) to view the output of the above example.
@@ -657,11 +640,10 @@ This function returns registered and inferred geographic information for a given
 - IP address (IPv4 or IPv6)
 
 #### Example
-
+```
 _fetch $SrcIP from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_ip_geo_report $SrcIP
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1oiWY0mgR6l1Ryd8osoYPHNnjcHvg0T8K) to view the output of the above example.
@@ -691,11 +673,10 @@ This function returns malware samples connecting to the given IP address, as ana
 - IP address (IPv4 or IPv6)
 
 #### Example
-
+```
 _fetch $SrcIP from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_ip_malware_report $SrcIP
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1GrOQOl9xbemGxkRMApu1S9MlUpiLCA8B) to view the output of the above example.
@@ -717,11 +698,10 @@ This function returns a report of the URL(s) on the given IP, as analyzed by Ali
 - IP address (IPv4 or IPv6)
 
 #### Example
-
+```
 _fetch $SrcIP from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_ip_url_report $SrcIP
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1FqO6vPs2sRyxnRmIzSrK1X2KGTw9Dc2o) to view the output of the above example.
@@ -745,11 +725,10 @@ This function returns passive DNS records pointing to the given IP address, as a
 - IP address (IPv4 or IPv6)
 
 #### Example
-
+```
 _fetch $SrcIP from testingintegrations limit 1
-
 >>_lookup alienvaultotx get_ip_passivedns_report $SrcIP
-
+```
 #### Output
 
 Click [here](https://drive.google.com/open?id=1IWXxSeeVQ4yJ4_YllvO4UZXo29sO6rWX) to view the output of the above example.
