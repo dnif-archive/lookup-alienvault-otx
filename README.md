@@ -13,7 +13,7 @@ OTX provides information on the reliability of threat information, reporter of t
 This section explains the details of the functions that can be used with the AlientVault lookup plugin.
 
 ### NOTE  
-In all the functions explained below, the examples use an event store named **testingintegrations**. This event store does not exist in DNIF by default. However, it can be created/imported. 
+ In all the functions explained below, the examples use an event store named **testingintegrations**. This event store does not exist in DNIF by default. However, it can be created/imported. |
 
 
 ### get_domain_report
@@ -25,10 +25,11 @@ This function returns a complete report of all threat indicators for a given dom
 - Domain name
 
 #### Example
-```
+
 _fetch $Domain from testingintegrations limit 1
->>_lookup alienvaultotx get\_domain\_report $Domain
-```
+
+>>_lookup alienvaultotx get_domain_report $Domain
+
 #### Output
 
 Click [here](https://drive.google.com/open?id=1jnymxp4w5sVJBTOxg5YN248HF4bWADAC) to view the output of the above example.
@@ -90,11 +91,11 @@ This function returns threat indicators for the given domain, gathered from the 
 - Domain name
 
 #### Example
-```
+
 _fetch $Domain from testingintegrations limit 1
 
->>_lookup alienvaultotx get\_domain\_pulse\_report $Domain
-```
+>>_lookup alienvaultotx get_domain_pulse_report $Domain
+
 #### Output
 
 Click [here](https://drive.google.com/open?id=1AeBCjg5yiITU7adj6WMeIVDtDED1IMtc) to view the output of the above example.
@@ -122,11 +123,11 @@ This function returns registered and inferred geographic information for the giv
 - Domain name
 
 #### Example
-```
+
 _fetch $Domain from testingintegrations limit 1
 
 >>_lookup alienvaultotx get_domain_geo_report $Domain
-```
+
 #### Output
 
 Click [here](https://drive.google.com/open?id=1yzrlGK-1Aql3uGryZ5Zbm_B-azNc9Wg-) to view the output of the above example.
@@ -156,11 +157,11 @@ This function returns malware samples connecting to the given domain, as analyze
 - Domain name
 
 #### Example
-````
+
 _fetch $Domain from testingintegrations limit 1
 
 >>_lookup alienvaultotx get_domain_malware_report $Domain
-````
+
 #### Output
 
 Click [here](https://drive.google.com/open?id=1eZsUaQgCRZXbv-hqFrBGOullT2xQm0fa) to view the output of the above example.
@@ -177,17 +178,17 @@ The output of the **lookup** call has the following structure (for the available
 
 This function returns a report of the URL(s) in the given domain, as analyzed by AlienVault Labs.
 
-Input
+#### Input
 
 - Domain name
 
-Example
+#### Example
 
-\_fetch $Domain from testingintegrations limit 1
+_fetch $Domain from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_domain\_url\_report $Domain
+>>_lookup alienvaultotx get_domain_url_report $Domain
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1dYxNyz33X-0hvvPC9aYqrqa9v_x0B0Qa) to view the output of the above example.
 
@@ -201,21 +202,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXUrlActualSize |  Number of of URL(s) found in the given domain |
 | $AVOTXUrls | List of URL(s) in the given domain |
 
-get\_domain\_passivedns\_report
+### get_domain_passivedns_report
 
 The function returns passive DNS records pointing to the given domain, as analyzed by AlienVault Labs.
 
-Input
+#### Input
 
 - Domain name
 
-Example
+#### Example
 
-\_fetch $Domain from testingintegrations limit 1
+_fetch $Domain from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_domain\_passivedns\_report $Domain
+>>_lookup alienvaultotx get_domain_passivedns_report $Domain
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1kFHN4ur_nvDl0tWCeg2lOIbXYrpudk08) to view the output of the above example.
 
@@ -229,21 +230,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXPassiveDnsCount | Number of passive DNS IP addresses pointing to the given domain, as analyzed by AlienVault Labs |
 | $AVOTXPassiveDnsHostnames | List of passive DNS host names pointing to the given domain, as analyzed by AlienVault Labs |
 
-get\_domain\_whois\_report
+### get_domain_whois_report
 
 This function returns the WHOIS data captured for the given domain. Information regarding domains, related to the given domain, has not been added yet.
 
-Input
+#### Input
 
 - Domain name
 
-Example
+#### Example
 
-\_fetch $Domain from testingintegrations limit 1
+_fetch $Domain from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_domain\_whois\_report $Domain
+>>_lookup alienvaultotx get_domain_whois_report $Domain
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1iJLhQEZ4cqn85HaCCM0dinDTghi2mzTy) to view the output of the above example.
 
@@ -269,21 +270,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXWhoisCreationDate | WHOIS information about the given domain&#39;s creation date |
 | $AVOTXWhoisExpirationDate | WHOIS information about the given domain&#39;s expiry date |
 
-get\_hash\_report
+### get_hash_report
 
 This function returns the metadata about the file hash, as well as dynamic and static analysis of the given filehash. The SHA1, MD5, or SHA256 hashing algorithm (formats) are acceptable.
 
-Input
+#### Input
 
 - File hash (SHA1, MD5, or SHA256)
 
-Example
+#### Example
 
-\_fetch $Filehash from testingintegrations limit 1
+_fetch $Filehash from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_hash\_report $Filehash
+>>_lookup alienvaultotx get_hash_report $Filehash
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1VBSL4zYy72TxpKCioc7ycmBBXsFioYL-) to view the output of the above example.
 
@@ -318,7 +319,7 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXVirusTotalSignatures | List of signatures, as provided by VirusTotal, that match the given hash to a known malware |
 | $AVOTXVirusTotalTotalChecks | Number of threat detection services, as provided by VirusTotal that were queried for the given hash |
 
-get\_url\_report
+### get_url_report
 
 This function returns the following information for the given URL:
 
@@ -326,17 +327,17 @@ This function returns the following information for the given URL:
 - Threat indicators gathered from the OTX community pulse stream
 - AlienVault Labs&#39; URL analysis results.
 
-Input
+#### Input
 
 - URL
 
-Example
+#### Example
 
-\_fetch $URL from testingintegrations limit 1
+_fetch $URL from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_url\_report $URL
+>>_lookup alienvaultotx get_url_report $URL
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1JvMN84a0yyqrDopqTLVrP1sIXdEqvYJA) to view the output of the above example.
 
@@ -371,21 +372,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXPulseTargetsCountries | List of countries in OTX pulses, that are targeted by this URL&#39;s malware |
 | $AVOTXPulseTargetsIndustries | List of industries in the OTX pulses, that are targeted by this URL&#39;s malware |
 
-get\_hostname\_report
+### get_hostname_report
 
 This function returns a complete report of all threat indicators for a given hostname, including data from all the sub-reports. Data returned includes pulse, geo, URL, passive DNS, and WHOIS analysis.
 
-Input
+#### Input
 
 - Host name
 
-Example
+#### Example
 
-\_fetch $Hostname from testingintegrations limit 1
+_fetch $Hostname from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_hostname\_report $Hostname
+>>_lookup alienvaultotx get_hostname_report $Hostname
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=10VUhVhdfxrdxGu6Jl9LEMieoL5Tp7uGX) to view the output of the above example.
 
@@ -421,21 +422,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXPassiveDnsCount | Number of passive DNS IP addresses pointing to the given host name, as analyzed by AlienVault Labs |
 | $AVOTXPassiveDnsHostnames | List of passive DNS host names pointing to the given host name, as analyzed by AlienVault Labs |
 
-get\_hostname\_pulse\_report
+### get_hostname_pulse_report
 
 This function returns threat indicators for the given hostname, gathered from the OTX community pulse stream.
 
-Input
+#### Input
 
 - Host name
 
-Example
+#### Example
 
-\_fetch $Hostname from testingintegrations limit 1
+_fetch $Hostname from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_hostname\_pulse\_report $Hostname
+>>_lookup alienvaultotx get_hostname_pulse_report $Hostname
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1gNoD2lwKnHPSHdfGk_9-3Hz_cDkADOSc) to view the output of the above example.
 
@@ -453,21 +454,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXPulseTargetsCountries | List of countries in OTX pulses, that are targeted by this host name&#39;s malware |
 | $AVOTXPulseTargetsIndustries | List of industries in OTX pulses, that are targeted by this host name&#39;s malware |
 
-get\_hostname\_geo\_report
+### get_hostname_geo_report
 
 This function returns registered and inferred geographic information for a given hostname.
 
-Input
+#### Input
 
 - Host name
 
-Example
+#### Example
 
-\_fetch $Hostname from testingintegrations limit 1
+_fetch $Hostname from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_hostname\_geo\_report $Hostname
+>>_lookup alienvaultotx get_hostname_geo_report $Hostname
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1508q0odc8tIIthJBlgHQqrvEc4zLRlrb) to view the output of the above example.
 
@@ -487,21 +488,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXGeoPostalCode | Postal code assigned to the location in which the given host name&#39;s hosting server is deployed |
 | $AVOTXGeoCountryCode | Two-letter code assigned to the country in which  the given host name&#39;s hosting server is deployed |
 
-get\_hostname\_malware\_report
+### get_hostname_malware_report
 
 This function returns malware samples analyzed by AlienVault Labs that have been connecting to the given hostname.
 
-Input
+#### Input
 
 - Host name
 
-Example
+#### Example
 
-\_fetch $Hostname from testingintegrations limit 1
+_fetch $Hostname from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_hostname\_malware\_report $Hostname
+>>_lookup alienvaultotx get_hostname_malware_report $Hostname
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1nyA9uf2ung5vw1G86UTCuivb9kbO9-qX) to view the output of the above example.
 
@@ -513,21 +514,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXMalwareCount | Number of malware samples connecting to the given host name, as analyzed by AlienVault Labs |
 | $AVOTXMalwareSHA256Hashes | SHA256 hashes of malware files connecting to the given host name, as analyzed by AlienVault Labs |
 
-get\_hostname\_url\_report
+### get_hostname_url_report
 
 This function returns a report of the URL(s), in the given hostname, analyzed by AlienVault Labs.
 
-Input
+#### Input
 
 - Host name
 
-Example
+#### Example
 
-\_fetch $Hostname from testingintegrations limit 1
+_fetch $Hostname from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_hostname\_url\_report $Hostname
+>>_lookup alienvaultotx get_hostname_url_report $Hostname
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1CZ6drOjXC4GfUiJqpsMmvpNjdc3-Tlhz) to view the output of the above example.
 
@@ -541,21 +542,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXUrlActualSize | Number of URL(s) found for the given host name |
 | $AVOTXUrls | List of URL(s) for the given host name |
 
-get\_hostname\_passievdns\_report
+### get_hostname_passievdns_report
 
 This function returns passive DNS records pointing to the given hostname, asanalyzed by AlienVault Labs.
 
-Input
+#### Input
 
 - Host name
 
-Example
+#### Example
 
-\_fetch $Hostname from testingintegrations limit 1
+_fetch $Hostname from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_hostname\_passivedns\_report $Hostname
+>>_lookup alienvaultotx get_hostname_passivedns_report $Hostname
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1SBiOmY42NU0_OmwYB-kVX1d0aLz4FWQZ) to view the output of the above example.
 
@@ -569,21 +570,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXPassiveDnsCount | Number of passive DNS IP addresses pointing to the given host name, as analyzed by AlienVault Labs |
 | $AVOTXPassiveDnsHostnames | List of passive DNS host names pointing to the given host name, as analyzed by AlienVault Labs. |
 
-get\_ip\_report
+### get_ip_report
 
 This function returns a complete report of all threat indicators for a given IP address, including data from all the sub-reports. This data returned includes pulse, geo, URL, passive DNS, and WHOIS analysis.
 
-Input
+#### Input
 
 - IP address (IPv4 or IPv6)
 
-Example
+#### Example
 
-\_fetch $SrcIP from testingintegrations limit 1
+_fetch $SrcIP from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_ip\_report $SrcIP
+>>_lookup alienvaultotx get_ip_report $SrcIP
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1jWZzrjoL8E_GE1joqim53D9R8AdsYooq) to view the output of the above example.
 
@@ -618,21 +619,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXPassiveDnsCount | Number of passive DNS IP addresses pointing to the given IP address, as analyzed by AlienVault Labs |
 | $AVOTXPassiveDnsHostnames | List of passive DNS host names pointing to the given IP address, as analyzed by AlienVault Labs |
 
-get\_ip\_reputation\_report
+### get_ip_reputation_report
 
 This function returns IP reputation data for the given IP address, as analyzed by AlienVault Labs using the OTX pulse stream.
 
-Input
+#### Input
 
 - IP address (IPv4 or IPv6)
 
-Example
+#### Example
 
-\_fetch $SrcIP from testingintegrations limit 1
+_fetch $SrcIP from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_ip\_reputation\_report $SrcIP
+>>_lookup alienvaultotx get_ip_reputation_report $SrcIP
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1UmhULCl7-AjYH6xvWVxvST94KfgWAgIC) to view the output of the above example.
 
@@ -647,21 +648,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXReputationThreatScore | AlienVault Labs threat score for the given IP address |
 | $AVOTXReputationThreatTypes | List of threat types of the malicious activities that have been traced to the given IP address |
 
-get\_ip\_geo\_report
+### get_ip_geo_report
 
 This function returns registered and inferred geographic information for a given IP address.
 
-Input
+#### Input
 
 - IP address (IPv4 or IPv6)
 
-Example
+#### Example
 
-\_fetch $SrcIP from testingintegrations limit 1
+_fetch $SrcIP from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_ip\_geo\_report $SrcIP
+>>_lookup alienvaultotx get_ip_geo_report $SrcIP
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1oiWY0mgR6l1Ryd8osoYPHNnjcHvg0T8K) to view the output of the above example.
 
@@ -681,21 +682,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXGeoPostalCode | Postal code assigned to the location in which the given IP address&#39; hosting server is deployed |
 | $AVOTXGeoCountryCode | Two letter code assigned to the country in which the IP address&#39; hosting server is deployed |
 
-get\_ip\_malware\_report
+### get_ip_malware_report
 
 This function returns malware samples connecting to the given IP address, as analyzed by AlienVault Labs.
 
-Input
+#### Input
 
 - IP address (IPv4 or IPv6)
 
-Example
+#### Example
 
-\_fetch $SrcIP from testingintegrations limit 1
+_fetch $SrcIP from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_ip\_malware\_report $SrcIP
+>>_lookup alienvaultotx get_ip_malware_report $SrcIP
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1GrOQOl9xbemGxkRMApu1S9MlUpiLCA8B) to view the output of the above example.
 
@@ -707,21 +708,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXMalwareCount | Number of malware samples connecting to the given IP address, as analyzed by AlienVault Labs |
 | $AVOTXMalwareSHA256Hashes | SHA256 hashes of malware files connecting to the given IP address, as analyzed by AlienVault Labs |
 
-get\_ip\_url\_report
+### get_ip_url_report
 
 This function returns a report of the URL(s) on the given IP, as analyzed by AlienVault Labs.
 
-Input
+#### Input
 
 - IP address (IPv4 or IPv6)
 
-Example
+#### Example
 
-\_fetch $SrcIP from testingintegrations limit 1
+_fetch $SrcIP from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_ip\_url\_report $SrcIP
+>>_lookup alienvaultotx get_ip_url_report $SrcIP
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1FqO6vPs2sRyxnRmIzSrK1X2KGTw9Dc2o) to view the output of the above example.
 
@@ -735,21 +736,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXUrlActualSize | Number of URL(s) found for the given IP address |
 | $AVOTXUrls | List of URL(s) for the given IP address |
 
-get\_ip\_passivedns\_report
+### get_ip_passivedns_report
 
 This function returns passive DNS records pointing to the given IP address, as analyzed by AlienVault Labs.
 
-Input
+#### Input
 
 - IP address (IPv4 or IPv6)
 
-Example
+#### Example
 
-\_fetch $SrcIP from testingintegrations limit 1
+_fetch $SrcIP from testingintegrations limit 1
 
-\&gt;\&gt;\_lookup alienvaultotx get\_ip\_passivedns\_report $SrcIP
+>>_lookup alienvaultotx get_ip_passivedns_report $SrcIP
 
-Output
+#### Output
 
 Click [here](https://drive.google.com/open?id=1IWXxSeeVQ4yJ4_YllvO4UZXo29sO6rWX) to view the output of the above example.
 
@@ -773,18 +774,18 @@ The AlienVault OTX API can be found on the AlienVault website at [https://otx.al
 
 [ACCESS DNIF CONTAINER VIA SSH](https://dnif.it/docs/guides/tutorials/access-dnif-container-via-ssh.html)
 
-2.Move to the  **/dnif/\&lt;Deployment-key\&gt;/lookup\_plugins**  folder path.
+2.Move to the  `**/dnif/<Deployment-key>/lookup_plugins**`  folder path.
 
-$cd /dnif/CnxxxxxxxxxxxxV8/lookup\_plugins/
+$cd /dnif/CnxxxxxxxxxxxxV8/lookup_plugins/
 
 3.Clone using the following command:
 
 git clone https://github.com/dnif/lookup-alienvault-otx.git alienvault-otx
 
-4.Navigate to the  **/dnif/\&lt;Deployment-key\&gt;/lookup\_plugins/alienvault-otx/**  folder path and open the **dnifconfig.yml** configuration file
+4.Navigate to the  `**/dnif/<Deployment-key>/lookup_plugins/alienvault-otx/**`  folder path and open the **dnifconfig.yml** configuration file
 
-5. Replace the tag \&lt; **Add\_your\_api\_key\_here** \&gt; with your AlienVault API key that can be generated at [https://otx.alienvault.com](https://otx.alienvault.com/)
+5. Replace the tag <**Add_your_api_key_here** > with your AlienVault API key that can be generated at [https://otx.alienvault.com](https://otx.alienvault.com/)
 
-lookup\_plugin:
+lookup_plugin:
 
-  AVOTX\_API\_KEY: \&lt;Add\_your\_api\_key\_here\&gt;
+  AVOTX_API_KEY: <Add_your_api_key_here>
