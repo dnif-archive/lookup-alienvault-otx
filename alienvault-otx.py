@@ -1,8 +1,9 @@
 import yaml
 import os
 import requests
-
+import datetime
 path = os.environ["WORKDIR"]
+
 with open(path + "/lookup_plugins/alienvault-otx/dnifconfig.yml", 'r') as ymlfile:
     cfg = yaml.safe_load(ymlfile)
 
@@ -291,8 +292,13 @@ def generate_domain_whois_report(i, check_domain, api_headers):
                     key = ( ( (item['key']).replace("_", " ") ).title() ).replace(" ", "")
                     value = item['value']
                     if key != None and value != None:
-                        newkey = '$AVOTXWhois'+key
-                        i[newkey] = value
+                        newkey = '$AVOTXWhois' + key
+                        if newkey == "$AVOTXWhoisCreationDate" or newkey == "$AVOTXWhoisExpirationDate" or newkey == "$AVOTXWhoisUpdatedDate":
+                            value = value[5:]
+                            value = datetime.datetime.strptime(value, '%d %b %Y %H:%M:%S %Z').isoformat()
+                            i[newkey] = value
+                        else:
+                            i[newkey] = value
                 except Exception:
                     pass
     except Exception, e:
@@ -1380,3 +1386,9 @@ def get_hash_report(inward_array, var_array):
             i = generate_hash_analysis_report(i, check_hash, api_headers)
 
     return inward_array
+
+
+ia=[{"$DT":"netmonastery.com"}]
+va =["$DT"]
+
+print get_domain_whois_report(ia,va)
