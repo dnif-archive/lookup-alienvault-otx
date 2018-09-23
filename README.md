@@ -12,24 +12,24 @@ OTX provides information on the reliability of threat information, reporter of t
 
 This section explains the details of the functions that can be used with the AlientVault lookup plugin.
 
-| **NOTE** In all the functions explained below, the examples use an event store named **testingintegrations**. This event store does not exist in DNIF by default. However, it can be created/imported. |
-| --- |
+### NOTE  
+In all the functions explained below, the examples use an event store named **testingintegrations**. This event store does not exist in DNIF by default. However, it can be created/imported. 
 
-get\_domain\_report
+
+### get_domain_report
 
 This function returns a complete report of all threat indicators for a given domain, including data from all the sub-reports. Data returned includes the pulse, geo, URL, passive DNS, and WHOIS analysis results.
 
-Input
+#### Input
 
 - Domain name
 
-Example
-
-\_fetch $Domain from testingintegrations limit 1
-
-\&gt;\&gt;\_lookup alienvaultotx get\_domain\_report $Domain
-
-Output
+#### Example
+```
+_fetch $Domain from testingintegrations limit 1
+>>_lookup alienvaultotx get\_domain\_report $Domain
+```
+#### Output
 
 Click [here](https://drive.google.com/open?id=1jnymxp4w5sVJBTOxg5YN248HF4bWADAC) to view the output of the above example.
 
@@ -81,21 +81,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXWhoisCreationDate | WHOIS information about the given domain&#39;s creation date |
 | $AVOTXWhoisExpirationDate | WHOIS information about the given domain&#39;s expiry date |
 
-get\_domain\_pulse\_report
+### get_domain_pulse_report
 
 This function returns threat indicators for the given domain, gathered from the OTX community&#39;s pulse stream.
 
-Input
+#### Input
 
 - Domain name
 
-Example
+#### Example
+```
+_fetch $Domain from testingintegrations limit 1
 
-\_fetch $Domain from testingintegrations limit 1
-
-\&gt;\&gt;\_lookup alienvaultotx get\_domain\_pulse\_report $Domain
-
-Output
+>>_lookup alienvaultotx get\_domain\_pulse\_report $Domain
+```
+#### Output
 
 Click [here](https://drive.google.com/open?id=1AeBCjg5yiITU7adj6WMeIVDtDED1IMtc) to view the output of the above example.
 
@@ -113,21 +113,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXPulseTargetsCountries | List of countries in OTX pulses, that are targeted by this domain&#39;s malware |
 | $AVOTXPulseTargetsIndustries | List of industries in OTX pulses, that are targeted by this domain&#39;s malware |
 
-get\_domain\_geo\_report
+### get_domain_geo_report
 
 This function returns registered and inferred geographic information for the given domain.
 
-Input
+#### Input
 
 - Domain name
 
-Example
+#### Example
+```
+_fetch $Domain from testingintegrations limit 1
 
-\_fetch $Domain from testingintegrations limit 1
-
-\&gt;\&gt;\_lookup alienvaultotx get\_domain\_geo\_report $Domain
-
-Output
+>>_lookup alienvaultotx get_domain_geo_report $Domain
+```
+#### Output
 
 Click [here](https://drive.google.com/open?id=1yzrlGK-1Aql3uGryZ5Zbm_B-azNc9Wg-) to view the output of the above example.
 
@@ -147,21 +147,21 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXGeoPostalCode | Postal code assigned to the location in which the given domain&#39;s hosting server is deployed |
 | $AVOTXGeoCountryCode | Two-letter code of the country where the given domain&#39;s hosting server is deployed |
 
-get\_domain\_malware\_report
+### get_domain_malware_report
 
 This function returns malware samples connecting to the given domain, as analyzed by AlienVault Labs.
 
-Input
+#### Input
 
 - Domain name
 
-Example
+#### Example
+````
+_fetch $Domain from testingintegrations limit 1
 
-\_fetch $Domain from testingintegrations limit 1
-
-\&gt;\&gt;\_lookup alienvaultotx get\_domain\_malware\_report $Domain
-
-Output
+>>_lookup alienvaultotx get_domain_malware_report $Domain
+````
+#### Output
 
 Click [here](https://drive.google.com/open?id=1eZsUaQgCRZXbv-hqFrBGOullT2xQm0fa) to view the output of the above example.
 
@@ -173,7 +173,7 @@ The output of the **lookup** call has the following structure (for the available
 | $AVOTXMalwareCount | Number of malware samples connecting to the given domain, as analyzed by AlienVault Labs |
 | $AVOTXMalwareSHA256Hashes | SHA256 hashes of malware files connecting to the given domain, as analyzed by AlienVault Labs |
 
-get\_domain\_url\_report
+### get_domain_url_report
 
 This function returns a report of the URL(s) in the given domain, as analyzed by AlienVault Labs.
 
