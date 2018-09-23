@@ -8,6 +8,14 @@
 
 OTX provides information on the reliability of threat information, reporter of the threat, and other details of threat investigations. OTX data can be used to enhance threat detection capabilities of security monitoring systems such as DNIF.
 
+### PRE-REQUISITES to use AlienVault OTX and DNIF  
+Outbound access required to resolve AlienVault OTX API
+
+| Protocol   | Source IP  | Source Port  | Direction	 | Destination Domain | Destination Port  |  
+|:------------- |:-------------|:-------------|:-------------|:-------------|:-------------|  
+| TCP | DS,CR,A10 | Any | Egress	| github.com | 443 |
+| TCP | DS,CR,A10 | Any | Egress	| otx.alienvault.com | 443 | 
+
 ## AlienVault OTX lookup plugin functions
 
 This section explains the details of the functions that can be used with the AlientVault lookup plugin.
